@@ -8,9 +8,15 @@ import { HijoComponent } from '../hijo/hijo.component';
   templateUrl: './padre.component.html',
   styleUrl: './padre.component.css'
 })
+
 export class PadreComponent {
-  numeros: number = 0;
-  agregarEstudiante(numeros: number){
-    this.numeros = numeros*2;
+  
+  numerofinal:number=0;
+  
+ enviandoduplicado(value: number){
+      this.numerofinal = value*2;
   }
+
+  
+  
 }

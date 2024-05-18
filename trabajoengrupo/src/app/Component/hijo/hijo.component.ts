@@ -24,12 +24,15 @@ export class HijoComponent {
     this.numero=0;
   }
 
- @Output() duplicado: EventEmitter<number> = new EventEmitter <number>();
 
- enviandoduplicado(){  /*  agregarEstudienteHijo */
-  this.duplicado.emit(this.numero);
-}
 
+
+ @Output() enviar: EventEmitter<number> = new EventEmitter <number>();
+
+enviandoduplicado(){  
+  this.enviar.emit(this.numero);
+/*   console.log("enviado"); */
+} 
 
 }
 
